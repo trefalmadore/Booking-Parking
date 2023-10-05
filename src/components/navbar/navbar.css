@@ -1,0 +1,100 @@
+/* CSS for Navbar component */
+.navbar-container {
+  position: sticky;
+  top: 0; /* Set the value based on your preference for when the navbar becomes sticky */
+  background-color: #fff; /* Background color for the navbar */
+  z-index: 100; /* Adjust z-index as needed */
+}
+
+.navbar {
+  background-color: #fff; /* Background color for the navbar */
+  color: #333; /* Text color for links and logo */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.logo {
+  max-width: 100px;
+  margin-right: 20px;
+  margin-top: 50px;
+}
+
+.topbar-img {
+  margin-top: -41px;
+  margin-left: 500px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-center {
+  flex-grow: 1; /* Allow the center content to expand and fill available space */
+  text-align: center;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #333; /* Link color */
+  margin: 0 15px; /* Spacing between links */
+  font-weight: bold; /* Make links bold */
+}
+
+a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
+/* Navbar styles */
+nav {
+  background-color: salmon;
+  color: black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 20px;
+  height: 40px;
+}
+
+.login-button {
+  background-color: transparent;
+  border: none;
+  color: green;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.login-button:hover {
+  text-decoration: underline;
+}
+
+.logout-button {
+  background-color: transparent;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.logout-button:hover {
+  text-decoration: underline;
+}
+
+.display-name {
+  color: #1F1534;
+}
+
+.home {
+  color: #2E4E92;
+}
+
+.find-parking-space {
+  color: #1F1534;
+}

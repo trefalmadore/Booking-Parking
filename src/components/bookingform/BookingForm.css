@@ -1,0 +1,71 @@
+.booking-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: rgba(199,17,17,0.08);
+  top: 2792px;
+  height: 400px;
+  flex-shrink: 0;
+}
+
+.form-title {
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 10px ;
+}
+
+
+.label {
+  margin-bottom: 5px;
+}
+
+.button-container {
+  display: flex;
+  width: 663px;
+  height: 56px;
+  padding: 10px 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #C92E3F;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  color: white;
+}
+
+
+
+.booking-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Left column: Date and End Time */
+.booking-form .left-column {
+  flex: 1;
+  padding-right: 20px;
+}
+
+/* Right column: Start Time, Name, and Zone */
+.booking-form .right-column {
+  flex: 1;
+  padding-left: 20px;
+}
+
+/* Style individual form elements as needed */
+.booking-form input[type="date"],
+.booking-form input[type="time"],
+.booking-form input[type="text"],
+.booking-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}

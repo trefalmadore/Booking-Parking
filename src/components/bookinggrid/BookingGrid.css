@@ -1,0 +1,111 @@
+.booking-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* Adjust the number of columns as needed */
+  grid-gap: 10px;
+  grid-template-rows: 100px 100px 100px;
+  max-width: 900px; /* Adjust as needed */
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.slot {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: 2px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Styling for available slots */
+.slot.available {
+  background-color: white;
+  color: #333;
+  font-weight: bold;
+  cursor: default;
+}
+
+/* Styling for booked slots */
+.slot.booked {
+  background-color: red;
+  color: white;
+  cursor: not-allowed;
+  font-weight: bold;
+}
+
+/* Styling for selected slots */
+.slot.selected {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  cursor: default;
+}
+
+/* Optional: Add hover effect for available slots */
+.slot.available:hover {
+  background-color: lightgreen;
+}
+
+/* Optional: Add hover effect for booked slots */
+.slot.booked:hover {
+  background-color: red;
+  color: white;
+  cursor: not-allowed;
+}
+
+/* Optional: Add hover effect for selected slots */
+.slot.selected:hover {
+  background-color: darkgreen;
+}
+
+.book-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.book-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.success-message {
+  margin-top: 10px;
+  color: green;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.form-title-s {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 1);
+  font-Size: 24px;
+  margin-top: 100px;
+
+}
+
+.booking-grid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
